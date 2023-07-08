@@ -81,6 +81,11 @@
                                             </tr>
                                         @empty
                                             <tr>
+                                                <td class="d-none"></td>
+                                                <td class="d-none"></td>
+                                                <td class="d-none"></td>
+                                                <td class="d-none"></td>
+                                                <td class="d-none"></td>
                                                 <td colspan="6" class="text-danger">
                                                     Although there are total {{ count($data) }} data, 
                                                     but no data exist between <b>{{ date('d M Y',strtotime($start_date)) }}</b>
