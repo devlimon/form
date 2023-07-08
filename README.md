@@ -8,14 +8,10 @@ go to our directory
 ```
 cd form
 ```
-make the .env files with with given configurations by me
+
+clone the .env file from given exmaples configurations by me
 ```
 cp .env.example .env
-```
-
-generate key
-```
-php artisan key:generate
 ```
 
 install vendors
@@ -23,7 +19,12 @@ install vendors
 composer install
 ```
 
-configure mails,rapidapikeys in .env and make sure you have internet connection as we have some third party apis
+generate key
+```
+php artisan key:generate
+```
+
+configure smtp,rapidapikeys in .env and make sure you have internet connection as we have some third party apis. for now i have used demo credentials for easy check although its not a good practice. will remove those later pushes.
 
 run tests if everything is ok
 ```
@@ -35,4 +36,4 @@ start development server
 php artisan serve
 ```
 
-now browse [http://127.0.0.1:8000](http://127.0.0.1:8000).
+now browse [http://127.0.0.1:8000](http://127.0.0.1:8000){:target="_blank"}

@@ -5,12 +5,12 @@ namespace Tests\Feature;
 // use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
-class PagesTest extends TestCase
+class FeaturesTest extends TestCase
 {
     /**
      * A basic test example.
      */
-    public function test_the_index_page(): void
+    public function index_page_is_ok(): void
     {
         $response = $this->get('/');
 
@@ -19,7 +19,7 @@ class PagesTest extends TestCase
         $response->assertViewIs('welcome');
     }
 
-    public function test_form_submission()
+    public function form_submission_is_ok()
     {
         $response = $this->post('/form', [
             'company_symbol' => 'AAPL',
@@ -33,7 +33,7 @@ class PagesTest extends TestCase
 
     }
 
-    public function test_rapid_api_call_is_fetching_data()
+    public function rapid_api_call_is_fetching_data()
     {
         $client = new \GuzzleHttp\Client();
 
