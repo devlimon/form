@@ -1,5 +1,5 @@
 ## Demo
-[https://test.bebshay.com/form/public/form](https://test.bebshay.com/form/public/form)
+[https://test.bebshay.com/form/public](https://test.bebshay.com/form/public)
 
 ## Install
 
